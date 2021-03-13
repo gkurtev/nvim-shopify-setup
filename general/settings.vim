@@ -5,6 +5,10 @@ set iskeyword+=-                      	" treat dash separated words as a word te
 set formatoptions-=cro                  " Stop newline continution of comments
 set hlsearch
 
+" Show trailing whitespace:
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
 syntax enable                           " Enables syntax highlighing
 set noswapfile
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -50,7 +54,7 @@ set undodir=~/.config/nvim/undo
 let g:python3_host_prog = '/usr/bin/python3'
 
 " number of undo saved
-set undolevels=10000 
+set undolevels=10000
 
 " New stuff
 " set notimeout nottimeout

@@ -10,4 +10,4 @@ session
 wiki/
 pack/
 utils/java/*
-undo/
+[._]*.un~
