@@ -80,7 +80,7 @@ else
 
   " Alternate way to save
   nnoremap <C-s> :w<CR>
-  "Format without saving 
+  "Format without saving
   nnoremap <A-s> :noa w<CR>
   " Close buffer without saving
   nmap <silent> <C-w> :bd<CR>
@@ -112,15 +112,15 @@ else
   nnoremap <silent> <C-Up>    :resize -2<CR>
   nnoremap <silent> <C-Down>  :resize +2<CR>
   nnoremap <silent> <C-Left>  :vertical resize -2<CR>
-  nnoremap <silent> <C-Right> :vertical resize +2<CR> 
+  nnoremap <silent> <C-Right> :vertical resize +2<CR>
 
   let g:elite_mode=0                      " Disable arrows"
   " Disable arrow movement, resize splits instead.
   if get(g:, 'elite_mode')
-      nnoremap <C-Up>    :resize -2<CR>
-      nnoremap <C-Down>  :resize +2<CR>
-      nnoremap <C-Left>  :vertical resize -2<CR>        
-      nnoremap <C-Right> :vertical resize +2<CR>
+    nnoremap <C-Up>    :resize -2<CR>
+    nnoremap <C-Down>  :resize +2<CR>
+    nnoremap <C-Left>  :vertical resize -2<CR>
+    nnoremap <C-Right> :vertical resize +2<CR>
   endif
 
 endif
@@ -132,7 +132,7 @@ inoremap <expr> <c-k> ("\<C-p>")
 "move faster around
 nnoremap H <Nop>
 nnoremap L <Nop>
-nnoremap H 0 
+nnoremap H 0
 nnoremap L g_
 nnoremap J }
 nnoremap K {

@@ -5,6 +5,12 @@ set iskeyword+=-                      	" treat dash separated words as a word te
 set formatoptions-=cro                  " Stop newline continution of comments
 set hlsearch
 
+" Auto indent on save
+augroup autoindent
+  au!
+  autocmd BufWritePre * :normal migg=G`i
+augroup End
+
 syntax enable                           " Enables syntax highlighing
 set noswapfile
 set hidden                              " Required to keep multiple buffers open multiple buffers
