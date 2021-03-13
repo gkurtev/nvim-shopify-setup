@@ -46,6 +46,9 @@ set guifont=JetBrainsMono\ Nerd\ Font
 set undofile
 set undodir=~/.config/nvim/undo
 
+" add python 3 provider
+let g:python3_host_prog = '/usr/bin/python3'
+
 " number of undo saved
 set undolevels=10000 
 
