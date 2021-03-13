@@ -29,5 +29,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
  
   "Nerd comments
   Plug 'preservim/nerdcommenter'
+  
+  "Clear trailing white space
+  Plug 'ntpeters/vim-better-whitespace'
+
 call plug#end()
 

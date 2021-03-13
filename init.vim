@@ -9,8 +9,7 @@ source $HOME/.config/nvim/plugins-config/vim-airline.vim
 source $HOME/.config/nvim/plugins-config/gruvbox.vim
 source $HOME/.config/nvim/plugins-config/mundo.vim
 source $HOME/.config/nvim/plugins-config/nerdcommenter.vim
-
-
+source $HOME/.config/nvim/plugins-config/vim-better-whitespace.vim
 
 "Settings and mappings
 source $HOME/.config/nvim/general/settings.vim
