@@ -12,6 +12,7 @@ source $HOME/.config/nvim/plugins-config/nerdcommenter.vim
 source $HOME/.config/nvim/plugins-config/vim-better-whitespace.vim
 source $HOME/.config/nvim/plugins-config/vim-git-gutter.vim
 source $HOME/.config/nvim/plugins-config/vim-easy-motion.vim
+source $HOME/.config/nvim/plugins-config/vim-visual-multi.vim
 
 "Settings and mappings
 source $HOME/.config/nvim/general/settings.vim

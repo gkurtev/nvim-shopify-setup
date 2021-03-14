@@ -10,4 +10,5 @@ let g:coc_global_extensions =
       \ 'coc-prettier',
       \ 'coc-stylelintplus',
       \ 'coc-eslint',
+      \ 'coc-tsserver',
       \ ]
