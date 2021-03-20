@@ -1,1 +1,1 @@
-let g:VM_maps["Switch Mode"] = '<Tab>'
+" let g:VM_maps["Switch Mode"] = '<Tab>'

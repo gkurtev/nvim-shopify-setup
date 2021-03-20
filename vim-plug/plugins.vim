@@ -40,7 +40,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
 
 "Multi Cursor
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+"Calculator
+Plug 'theniceboy/vim-calc'
 
 call plug#end()
 

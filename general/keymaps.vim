@@ -8,7 +8,8 @@ nnoremap <Space> <Nop>
 let mapleader=" "
 
 "Global replace for all files with fzf quickfix window
-nnoremap <A-r> :cdo %s///ge | update
+nnoremap <A-r> :cdo %s///ge<left><left><left><left>
+vnoremap <A-r> y:bufdo %s/<C-r>"//ge<left><left><left>
 
 " Delete words in insert mode
 inoremap <C-Q> <C-\><C-O>db
@@ -25,13 +26,6 @@ vnoremap <silent> # :<C-U>
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 
-if has('nvim')
-  tnoremap <a-a> <esc>a
-  tnoremap <a-b> <esc>b
-  tnoremap <a-d> <esc>d
-  tnoremap <a-f> <esc>f
-endif
-
 "1 column vertical
 nmap <silent> <A-1> :bunload<CR>
 "2 column vertical
@@ -39,6 +33,12 @@ nmap <silent> <A-2> :vert belowright sb<CR>
 
 " Create new file inside opened buffer's directory
 nmap <A-n> :!touch %:p:h/
+" Delete current file of open buffer and close buffer
+nmap <A-d> :call delete(expand('%'))
+
+
+" Create new folder inside opened bugger's director
+nmap <A-m> :!mkdir %:p:h/
 
 " Better indenting
 vnoremap < <gv
@@ -126,9 +126,10 @@ inoremap <C-l> <C-o>g$
 inoremap <C-h> <C-o>g0
 
 " Replaces the current word (and all occurrences).
-nnoremap <F4> :%s/\<<C-r><C-w>\>/
-vnoremap <F4> y:%s/<C-r>"/
+nnoremap <C-n> :%s/\<<C-r><C-w>\>/
+vnoremap <C-n> y:%s/<C-r>"/
 
 " Change yank functionality
 nnoremap Y y$
 
+"Experiments
