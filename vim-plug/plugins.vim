@@ -10,13 +10,6 @@ Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-"Airline responsible for bottom bar status
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-"Gruvbox theme
-Plug 'morhetz/gruvbox'
-
 "Github based plugins
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -39,11 +32,14 @@ Plug 'airblade/vim-gitgutter'
 "Easy Motion
 Plug 'easymotion/vim-easymotion'
 
-"Multi Cursor
-" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+"Tabline
+Plug 'ap/vim-buftabline'
 
-"Calculator
-Plug 'theniceboy/vim-calc'
+"Status line
+Plug 'itchyny/lightline.vim'
+
+" Colorscheme Theme
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 

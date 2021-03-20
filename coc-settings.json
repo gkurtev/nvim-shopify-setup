@@ -1,12 +1,15 @@
 {
   //Prettier settings
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "scss", "html", "js", "javascript"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "scss", "html", "js", "javascript", "liquid"],
+  "prettier.disableLanguages": [],
+  "prettier.formatterPriority": -1,
 
   //Stylelintplus 
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
   "wxss.validate": false,
+
 
   //Stylelintplus
   "stylelintplus.autoFixOnSave": true, 

@@ -16,15 +16,15 @@ inoremap <C-Q> <C-\><C-O>db
 
 " Search for selected text, forwards or backwards.
 vnoremap <silent> * :<C-U>
-  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-  \gvy/<C-R>=&ic?'\c':'\C'<CR><C-R><C-R>=substitute(
-  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-  \gVzv:call setreg('"', old_reg, old_regtype)<CR>
+      \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+      \gvy/<C-R>=&ic?'\c':'\C'<CR><C-R><C-R>=substitute(
+      \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+      \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 vnoremap <silent> # :<C-U>
-  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
-  \gvy?<C-R>=&ic?'\c':'\C'<CR><C-R><C-R>=substitute(
-  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
-  \gVzv:call setreg('"', old_reg, old_regtype)<CR>
+      \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+      \gvy?<C-R>=&ic?'\c':'\C'<CR><C-R><C-R>=substitute(
+      \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+      \gVzv:call setreg('"', old_reg, old_regtype)<CR>
 
 "1 column vertical
 nmap <silent> <A-1> :bunload<CR>
@@ -37,7 +37,7 @@ nmap <A-n> :!touch %:p:h/
 nmap <A-d> :call delete(expand('%'))
 
 
-" Create new folder inside opened bugger's director
+" Create new folder inside opened buffer's director
 nmap <A-m> :!mkdir %:p:h/
 
 " Better indenting
@@ -133,3 +133,15 @@ vnoremap <C-n> y:%s/<C-r>"/
 nnoremap Y y$
 
 "Experiments
+" writing function example
+function! FirstFunction()
+  echom 'suck it babe'
+endfunction
+
+" Ripgrep(RG) files search from visual mode
+vnoremap <A-f> y:Rg <C-r>"<CR>
+
+"
+" select all with control-a
+"
+nnoremap <C-a> ggVG

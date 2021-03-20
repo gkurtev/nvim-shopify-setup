@@ -8,13 +8,21 @@ set hlsearch
 "avoid tags from showing in commits
 set tags+=.git/tags;/
 
+" Buf tabline plugin indicate when there are changes
+let g:buftabline_indicators = 1
+
+" Set color scheme
+colorscheme onedark
+highlight Normal ctermbg=None
+highlight LineNr ctermfg=DarkGrey
+
 " Auto indent on save
 augroup autoindent
   au!
   autocmd BufWritePre * :normal migg=G`i
 augroup End
 
-syntax enable                           " Enables syntax highlighing
+syntax on
 set noswapfile
 set hidden                              " Required to keep multiple buffers open multiple buffers
 " set nowrap                              " Display long lines as just one line
@@ -27,7 +35,6 @@ set cmdheight=2                         " More space for displaying messages
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
-set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
 set tabstop=2                           " Insert 2 spaces for a tab
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
@@ -59,7 +66,7 @@ set undodir=~/.config/nvim/undo
 let g:python3_host_prog = '/usr/bin/python3'
 
 " number of undo saved
-set undolevels=10000
+set undolevels=5000
 
 " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
