@@ -6,9 +6,11 @@ let g:coc_global_extensions =
       \ 'coc-css', 
       \ 'coc-emmet',
       \ 'coc-pairs',
+      \ 'coc-html',
       \ 'coc-fzf-preview',
       \ 'coc-prettier',
       \ 'coc-stylelintplus',
       \ 'coc-eslint',
       \ 'coc-tsserver',
+      \ 'coc-calc',
       \ ]

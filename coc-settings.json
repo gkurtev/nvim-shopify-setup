@@ -24,6 +24,9 @@
     "liquid": "html" 
   },
 
+  //COC-HTML
+  "html.filetypes": ["html","handlebars","htmldjango","blade", "liquid"],
+
   "explorer.width": 30,
   "explorer.file.showHiddenFiles": false,
   "explorer.file.autoReveal": false,

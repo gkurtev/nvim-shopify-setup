@@ -145,3 +145,10 @@ vnoremap <A-f> y:Rg <C-r>"<CR>
 " select all with control-a
 "
 nnoremap <C-a> ggVG
+
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
