@@ -3,6 +3,9 @@ imap <C-h> <C-w>h
 imap <C-j> <C-w>j
 imap <C-k> <C-w>k
 imap <C-l> <C-w>l
+" Remap visual block
+nnoremap <c-b> <c-v>
+
 " g Leader key
 nnoremap <Space> <Nop>
 let mapleader=" "
@@ -101,7 +104,9 @@ inoremap <C-k> <C-\><C-N><C-w>k
 inoremap <C-l> <C-\><C-N><C-w>l
 tnoremap <Esc> <C-\><C-n>
 
-nnoremap <silent> <A-9>  :vertical resize -2<CR>
+nnoremap <silent> <A-7> :resize -2<CR>
+nnoremap <silent> <A-8> :resize +2<CR>
+nnoremap <silent> <A-9> :vertical resize -2<CR>
 nnoremap <silent> <A-0> :vertical resize +2<CR>
 
 let g:elite_mode=0                      " Disable arrows"

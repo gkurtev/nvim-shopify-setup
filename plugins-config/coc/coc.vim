@@ -31,7 +31,7 @@ endif
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -164,7 +164,7 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_next = '<c-j>'
 
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
@@ -174,38 +174,38 @@ vmap <A-]> <Plug>(coc-convert-snippet)
 
 "== Explorer ==
 let g:coc_explorer_global_presets = {
-\   '.vim': {
-\     'root-uri': '~/.vim',
-\   },
-\   'tab': {
-\     'position': 'tab',
-\     'quit-on-open': v:true,
-\   },
-\   'floating': {
-\     'position': 'floating',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingTop': {
-\     'position': 'floating',
-\     'floating-position': 'center-top',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingLeftside': {
-\     'position': 'floating',
-\     'floating-position': 'left-center',
-\     'floating-width': 50,
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingRightside': {
-\     'position': 'floating',
-\     'floating-position': 'right-center',
-\     'floating-width': 50,
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'simplify': {
-\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-\   }
-\ }
+      \   '.vim': {
+      \     'root-uri': '~/.vim',
+      \   },
+      \   'tab': {
+      \     'position': 'tab',
+      \     'quit-on-open': v:true,
+      \   },
+      \   'floating': {
+      \     'position': 'floating',
+      \     'open-action-strategy': 'sourceWindow',
+      \   },
+      \   'floatingTop': {
+      \     'position': 'floating',
+      \     'floating-position': 'center-top',
+      \     'open-action-strategy': 'sourceWindow',
+      \   },
+      \   'floatingLeftside': {
+      \     'position': 'floating',
+      \     'floating-position': 'left-center',
+      \     'floating-width': 50,
+      \     'open-action-strategy': 'sourceWindow',
+      \   },
+      \   'floatingRightside': {
+      \     'position': 'floating',
+      \     'floating-position': 'right-center',
+      \     'floating-width': 50,
+      \     'open-action-strategy': 'sourceWindow',
+      \   },
+      \   'simplify': {
+      \     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+      \   }
+      \ }
 
 nmap <silent> <space>e :CocCommand explorer<CR>
 nmap <silent> <space>f :CocCommand explorer --preset floating<CR>

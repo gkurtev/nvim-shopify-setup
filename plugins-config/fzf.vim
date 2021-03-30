@@ -2,7 +2,7 @@
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit' }
+  \ 'alt-v': 'vsplit' }
 
 " Enable per-command history.
 " CTRL-N and CTRL-P will be automatically bound to next-history and
@@ -12,10 +12,10 @@ let g:fzf_action = {
 "let g:fzf_history_dir = '~/.local/share/fzf-history'
 "let g:fzf_buffers_jump = 1
 
- map <silent> <A-z> :GFiles<CR>
- map <silent> <A-p> :Files<CR>
- map <silent> <A-f> :Rg<CR>
- map <silent> <A-b> :Buffers<CR>
+ map <silent> <A-z> :GFiles!<CR>
+ map <silent> <A-p> :Files!<CR>
+ map <silent> <A-f> :Rg!<CR>
+ map <silent> <A-b> :Buffers!<CR>
 
 " map <leader>b :Buffers<CR>
 " nnoremap <leader>g :Rg<CR>

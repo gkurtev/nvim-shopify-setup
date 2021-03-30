@@ -1,10 +1,10 @@
 {
   //Prettier settings
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "scss", "html", "js", "javascript", "liquid"],
-  "prettier.disableLanguages": [],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "scss", "html", "js", "javascript"],
+  "prettier.disableLanguages": ["liquid"],
   "prettier.formatterPriority": -1,
 
-  //Stylelintplus 
+  //Stylelintplus
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
@@ -12,7 +12,7 @@
 
 
   //Stylelintplus
-  "stylelintplus.autoFixOnSave": true, 
+  "stylelintplus.autoFixOnSave": true,
 
   //Eslint
   "eslint.autoFixOnSave": true,
@@ -21,7 +21,7 @@
   "emmet.includeLanguages": {
     "vue-html": "html",
     "javascript": "javascriptreact",
-    "liquid": "html" 
+    "liquid": "html"
   },
 
   //COC-HTML
