@@ -5,6 +5,9 @@ set iskeyword+=-                      	" treat dash separated words as a word te
 set formatoptions-=cro                  " Stop newline continution of comments
 set hlsearch
 
+"auto update buffer file
+au FocusGained,BufEnter * :silent! !
+
 "avoid tags from showing in commits
 set tags+=.git/tags;/
 
