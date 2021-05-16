@@ -1,9 +1,9 @@
 let g:coc_global_extensions = 
       \[
-      \ 'coc-explorer', 
+      \ 'coc-explorer',
       \ 'coc-json',
-      \ 'coc-snippets', 
-      \ 'coc-css', 
+      \ 'coc-snippets',
+      \ 'coc-css',
       \ 'coc-emmet',
       \ 'coc-pairs',
       \ 'coc-html',
